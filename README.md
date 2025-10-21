@@ -66,6 +66,22 @@ To map a control value to rotor speed you need the motor’s maximum RPM (`RPM_m
 
 Example: With `RPM_max = 10 000` and a control value of `0.5`, the rotor spins at `5 000 RPM`, giving `ω ≈ 523.6 rad/s`.
 
+File locations
+--------------
+Drone flight log is recorded and saved under log{000n} folder. CSV files for corresponding sensors are listed below.
+
+Each IMU file is saved in:
+- VOXL imu0 (~1000Hz): log{000n}/run/mpa/imu0/data.csv
+- VOXL imu1 (~1000Hz): log{000n}/run/mpa/imu1/data.csv
+- PX4 imu0 (~100Hz): log{000n}/px4/imu_combined/log0001_px4_imu0_combined.csv
+- PX4 imu1 (~100Hz): log{000n}/px4/imu_combined/log0001_px4_imu1_combined.csv
+
+GPS data is stored in:
+- log{000n}/px4/{date}_sensor_gps_0.csv
+
+Motor output is saved in:
+- log{000n}/px4/{date}_actuator_motors_0.csv
+
 Notes & Tips
 ------------
 
