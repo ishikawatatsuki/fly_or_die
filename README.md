@@ -93,7 +93,3 @@ Notes & Tips
 Next step
 ---------
 Under the src/dataset folder, dataset reader is given in python script. You can play around the given scripts to familiarize with the drone data.
-
-
-
-hefueufihseo
